@@ -1,58 +1,88 @@
+[data-theme="light"] {
+    --body-bg: #dfdfdf;
+    --text-color: #2a2a2a;
+    --img-bg: #ccc;
+    --invert-logo: invert(100%);
+}
+
+[data-theme="dark"] {
+    --body-bg: #202020;
+    --text-color: #dfdfdf;
+    --img-bg: #2e2e2e;
+}
+
 body {
-    color: #333333;
+    background: var(--body-bg);
+    color: var(--text-color);
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin-left: auto;
     margin-right: auto;
-    width: 940px;
+    width: 58.75rem;
 }
 
 p {
-    padding: 0 45px;
-    text-indent: 15px;
+    font-size: 1rem;
+    padding: 0 2.8rem;
+    text-indent: 0.9rem;
+}
+
+.toggle {
+    background: var(--text-color);
+    border: 0.1rem solid var(--text-color);
+    color: var(--body-bg);
 }
 
 h1 {
-    background-image: url(img/sobre-background.jpg);
-    padding: 10px;
+    border-bottom: 0.1rem solid #333333;
+    margin-top: 1.9rem;
 }
 
 h2 {
-    border-bottom: 2px solid #333333;
-    margin-top: 30px;
+    border-bottom: 0.1rem solid #333333;
+    margin-top: 1.9rem;
+}
+
+li {
+    font-size: 1rem;
 }
 
 figure {
-    background-color: #F2EDED;
-    border: 1px solid #ccc;
+    background-color: var(--img-bg);
+    border: 0.06rem solid #ccc;
     text-align: center;
-    padding: 15px;
-    margin: 30px;
+    padding: 0.9rem;
+    margin: 1.9rem;
 }
 
 figcaption {
     font-size: italic;
-    margin-top: 30px;
+    margin-top: 1.9rem;
 }
 
 footer {
-    color: #777;
-    margin: 30px 0;
-    padding: 30px 0;
+    color: var(--img-bg);
+    margin: 1.9rem 0;
+    padding: 1.9rem 0;
 }
 
 footer img {
-    margin-right: 30px;
+    margin-right: 1.9rem;
     vertical-align: middle;
-    width: 94px;
+    width: 5.8rem;
 }
 
 #familia-pelho {
     float: right;
-    margin: 0 0 10px 10px;
+    margin: 0 0 0.62rem 0.62rem;
 }
 
 #centro-distribuicao {
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
+    width: 34rem;
+}
+
+.logo {
+    filter: var(--invert-logo);
+
 }
